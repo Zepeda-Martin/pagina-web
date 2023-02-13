@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      body {
+        background-color: black;
+        color: white;
+        text-align: center;
+      }
+
+      .text {
+        font-size: 36px;
+        margin-top: 100px;
+        font-family: Georgia, serif;
+      }
+
+      .heart {
+        background-color: red;
+        width: 50px;
+        height: 50px;
+        border-radius: 25px 25px 0 0;
+        transform: rotate(45deg);
+        margin: 100px auto;
+        position: relative;
+        animation: pulse 1s ease-in-out infinite;
+      }
+
+      @keyframes pulse {
+        0% {
+          transform: scale(1);
+        }
+        50% {
+          transform: scale(1.05);
+        }
+        100% {
+          transform: scale(1);
+        }
+      }
+
+      .heart:before,
+      .heart:after {
+        content: "";
+        background-color: red;
+        border-radius: 25px 25px 0 25px;
+        position: absolute;
+        box-shadow: 0 0 10px red;
+      }
+
+      .heart:before {
+        width: 50px;
+        height: 50px;
+        top: -25px;
+        left: 0;
+      }
+
+      .heart:after {
+        width: 50px;
+        height: 50px;
+        top: 0;
+        left: -25px;
+      }
+
+      .images {
+        display: flex;
+        justify-content: center;
+        margin-top: 100px;
+      }
+
+      .images img {
+        width: 300px;
+        margin: 0 50px;
+      }
+
+      
+    </style>
+  </head>
+  <body>
+    <div class="text">Gracias por ser la coincidencia mas bonita de mi vida</div>
+    <div class="heart"></div>
+    <div class="images">
+      <img src="/IMAGES/WhatsApp Image 2023-02-12 at 9.47.49 PM.jpeg" alt="Wapos los inges">
+      <img src="/IMAGES/WhatsApp Image 2023-02-12 at 10.55.33 PM (1).jpeg" alt="MichiSalma">
+    </div>
+  </body>
+</html>
